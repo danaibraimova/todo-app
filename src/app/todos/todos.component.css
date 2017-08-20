@@ -1,0 +1,12 @@
+.btn-tiny
+{
+    margin-left: 10px;
+}
+
+h3, form, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    font-weight: 300;
+}
