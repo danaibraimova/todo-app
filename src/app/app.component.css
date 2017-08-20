@@ -1,4 +1,10 @@
 .navbar-brand
 {
     font-family: 'Open Sans', sans-serif;
+    color: #8DA8B1;
+}
+
+.navbar-inverse
+{
+    background-color: #C2E4EF;
 }
