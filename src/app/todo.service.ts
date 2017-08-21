@@ -4,8 +4,8 @@ import {Init } from './init-todos';
 @Injectable()
 export class TodoService extends Init {
 
-  constructor() { 
-    super(); //in order to call Init class constructor 
+  constructor() {
+    super(); // in order to call Init class constructor
     console.log("TodoService initialized");
     this.load();
 
@@ -38,24 +38,22 @@ export class TodoService extends Init {
           }
       }
 
-      //set todos
+      // set todos
       localStorage.setItem('todos', JSON.stringify(todos));
 
   }
 
   updateTodo(oldText, newText)
   {
-    var todos = JSON.parse(localStorage.getItem('todos'));
-    
+    var todos = JSON.parse(localStorage.getItem('todos'));    
         for(var i=0;i<todos.length;i++)
           {
             if(todos[i].text==oldText)
               {
                 todos[i].text = newText;
               }
-          }
-    
-          //set todos
+          }    
+          // set todos
           localStorage.setItem('todos', JSON.stringify(todos));
 
   }

@@ -1,17 +1,13 @@
-export class Init
-{
-    load()
-    {
-        if(localStorage.getItem('todos')==null || localStorage.getItem('todos')==undefined)
-            {
-                console.log('No tasks! Creating our own...')
-                var todos = [
+export class Init {
+    load() {
+        if (localStorage.getItem('todos') === null || localStorage.getItem('todos') === undefined) {
+                console.log('No tasks! Creating our own...');
+                const todos = [
                     {
                         text: 'Learn Angular4'
                     },
                     {
-                        text: 'Create Todo App',
-            
+                        text: 'Create Todo App'
                     },
                     {
                         text: 'Feed the cat'
@@ -20,12 +16,9 @@ export class Init
                         text: 'Save the world'
                     }
                 ];
-
                 localStorage.setItem('todos', JSON.stringify(todos));
-                return 
-            }
-            else
-            {
+                return;
+            } else {
                 console.log('Found todos!');
             }
     }
